@@ -1,14 +1,55 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      {{title}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content class="ion-padding" [fullscreen]="true" color="success">
+  <!-- <h2>Data Mahasiswa</h2>
+    <p>Nama   : {{nama}}</p>
+    <p>NIM    : {{nim}}</p>
+    <p>Kelas  : {{kelas}}</p>
+    <p>Prodi  : {{prodi}}</p>
+    <p>SPP    : {{spp | currency: 'Rp '}}</p>
+ -->
+  <ion-card>
+    <ion-item>
+      <ion-label>
+        <h2>{{a}}+{{b}}={{c}}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+      <ion-item>
+        <ion-label>
+          angka 1
+        </ion-label>
+        <ion-input placeholder="masukkan angka 1" [(ngModel)]="angka1"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          angka 2
+        </ion-label>
+        <ion-input placeholder="masukkan angka 2" [(ngModel)]="angka2"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-button color="warning" (click)="kali()" expand="block"> Kali </ion-button>
+        <ion-button color="warning" (click)="kurang()" expand="block"> Kurang </ion-button>
+        <ion-button color="warning" (click)="bagi()" expand="block"> Bagi </ion-button>
+        <ion-button color="warning" (click)="tambah()" expand="block"> tambah </ion-button>
+
+      </ion-item>
+
+      <ion-item>
+        <h2>{{hasil}}</h2>
+      </ion-item>
+      
+
+  </ion-card>
+  
 </ion-content>
