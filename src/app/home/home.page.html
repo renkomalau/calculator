@@ -1,8 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      {{title}}
-    </ion-title>
+    <ion-searchbar></ion-searchbar>   
   </ion-toolbar>
 </ion-header>
 
@@ -14,7 +12,7 @@
     <p>Prodi  : {{prodi}}</p>
     <p>SPP    : {{spp | currency: 'Rp '}}</p>
  -->
-  <ion-card>
+  <!-- <ion-card>
     <ion-item>
       <ion-label>
         <h2>{{a}}+{{b}}={{c}}</h2>
@@ -50,6 +48,17 @@
       </ion-item>
       
 
-  </ion-card>
+  </ion-card> -->
+
+
+
+
+  <ion-slides>
+    <ion-slide>
+      <ion-card>
+        {{title}}
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
   
 </ion-content>
